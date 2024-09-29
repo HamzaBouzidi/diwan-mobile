@@ -95,7 +95,8 @@ class AuthService {
       BuildContext context, String userEmail, String password) async {
     try {
       // API URL for login (replace with your actual endpoint)
-      final url = Uri.parse('http://192.168.1.104:3000/api/login');
+      //final url = Uri.parse('http://192.168.1.104:3000/api/login');
+      final url = Uri.parse('$baseUrl/login');
 
       // Prepare request body
       final body = json.encode({
